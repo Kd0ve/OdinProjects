@@ -28,7 +28,7 @@ function gameRps(playerSelection, computerSelection){
         } else {
             return "computer";
         }
-    }else if(computerSelection == "scissors"){
+    } else if(computerSelection == "scissors"){
         if(playerSelection == "rock"){
             return "player";
         } else {
