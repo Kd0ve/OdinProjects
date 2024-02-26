@@ -1,0 +1,279 @@
+/* 
+    General styles
+    Completed: 02/25/2024 
+*/
+body
+{
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+/* 
+    Header styles
+    Completed: 02/25/2024 
+*/
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #1f2937;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.header .logo 
+{
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.links
+{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.left, .right 
+{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* 
+    Entire content section. 
+    Everything but header and footer
+*/
+.content
+{
+    flex: 1;
+}
+
+/* 
+    First section what is referred to as "hero" in instructions 
+    Completed: 02/25/2024
+*/
+.intro
+{
+    background: #1f2937;
+    padding: 10px 20% 50px 20%;
+    height: 545px;
+    margin: 0px;
+}
+
+.intro-content 
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding-top: 25px;
+}
+
+/*header of hero*/
+.intro h1
+{
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0px;
+}
+
+/*sign up button below subtext and header*/
+.intro button
+{
+    background: #3882f6;
+    color: #f9faf8;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 30px;
+}
+
+/*aligning of left and right sections*/
+.left-intro-content
+{
+    padding: 80px 0px;
+    width: 400px;
+}
+
+.right-intro-content
+{
+    margin-top: 100px;
+}
+
+.right-intro-content img
+{
+    height: 250px;
+    width: 450px;
+}
+
+/*subtext under header*/
+.intro p
+{
+    color: #e5e7eb;
+}
+
+/*
+    Main content secition
+*/
+.main-section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding: 20px 20% 100px 20%;
+    margin: 0px;
+    height: 545px;
+}
+
+.main-section h2
+{
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.main-section .display-images
+{
+    display:flex;
+    margin: 0px 100px;
+}
+
+.main-section .display-images .box
+{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    vertical-align: text-top;
+    padding: 15px;
+}
+
+.main-section .display-images .box .inner-box
+{
+    border: solid #3882f6;
+    border-radius: 10px;
+    height: 125px;
+    width: 125px;
+}
+
+/*
+    Quote styles
+*/
+.quote-information
+{
+    background: #e5e7eb;
+    height: 545px;
+}
+
+.quote-section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 150px;
+    margin: 0px;
+}
+
+.quote-section .quote
+{
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1f2937
+}
+
+.author-section
+{
+    display:flex;
+    justify-content: right;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+/*
+    Call to action styles
+*/
+.call-section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 545px;
+}
+
+.banner
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3882f6;
+    border-radius: 8px;
+    height: 175px;
+    width: 80%;
+}
+
+.banner .main
+{
+    margin-right:100px;
+}
+
+.banner .main .main-call
+{
+    font-size: 24px;
+    color: #f9faf8;
+    margin:0px;
+}
+
+.banner .main .sub-call
+{
+    font-size: 18px;
+    color: #e5e7eb;
+    margin:0px;
+}
+
+.banner button
+{
+    background: #3882f6;
+    color: #f9faf8;
+    border-radius: 8px;
+    border: solid #f9faf8;
+    padding: 8px 30px;
+}
+
+/*
+    Footer styles
+*/
+.footer
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1f2937;
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
