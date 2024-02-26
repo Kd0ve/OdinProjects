@@ -1,0 +1,19 @@
+/* Default elements style for entire site*/
+body {
+    color: white;
+    background-color: black;
+    font-family: "Lucida Console", "Monaco", monospace;
+}
+a:link {
+    text-decoration:none;
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+    background-color:hsla(182, 100%, 50%, 0.2);
+    color: lightgray;
+}
+a:visited {
+    text-decoration:none;
+    color: white;
+}
