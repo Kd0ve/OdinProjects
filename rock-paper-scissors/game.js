@@ -1,4 +1,7 @@
 // Main game code
+const playerScore = 0;
+const computerScore = 0;
+const ties = 0;
 function getComputerChoice(){
     var choiceNum = Math.floor(Math.random() * 3) + 1;
     var choiceRps = "";
@@ -37,26 +40,14 @@ function gameRps(playerSelection, computerSelection){
     }
 }
 
-function playGame(){
-    var playerScore = 0;
-    var computerScore = 0;
-    var ties = 0;
-    var finalWinner = "";
-    for(var i = 1; i <= 5; i++){
-        var playerSelection = prompt("Rock, paper, or scissors?: ");
-        var computerSelection = getComputerChoice();
-        var winner = gameRps(playerSelection, computerSelection);
-        if(winner == "tie"){
-            ties += 1;
-        } else if(winner == "player"){
-            playerScore += 1;
-        } else if(winner == "computer"){
-            computerScore += 1;
-        }
-        console.log("Player's score: " + playerScore +
-                    "\nComputer's score: " + computerScore +
-                    "\nTies: " + ties)
-    }
+/*
+function playGame(playerSelection, computerSelection){
+    const winner = gameRps(playerSelection, computerSelection);
+    return winner;
+    
+    console.log("Player's score: " + playerScore +
+                "\nComputer's score: " + computerScore +
+                "\nTies: " + ties)
     if(playerScore > computerScore){
         finalWinner = "Player";
     } else if(computerScore > playerScore){
@@ -64,11 +55,59 @@ function playGame(){
     } else {
         finalWinner = "None"
     }
-
-    return ("Player's score: " + playerScore +
-            "\nComputer's score: " + computerScore +
-            "\nTies: " + ties +
-            "\nThe winner is the " + finalWinner + "!");
+    return ("The winner was: "+finalWinner);
+    
 }
+*/
 
-console.log(playGame());
+document.addEventListener('DOMContentLoaded', (event) => {
+    const rock = document.getElementById("rock");
+    const paper = document.getElementById("paper");
+    const scissors = document.getElementById("scissors");
+    const player = document.getElementById("gamePlayer");
+    const computer = document.getElementById("gameComputer");
+    const gameTies = document.getElementById("gameTies");
+
+    let overallPlayerScore = 0;
+    let overallComputerScore = 0;
+    let overallTies = 0;
+    rock.addEventListener('click', () => {
+        const result = gameRps("rock", getComputerChoice());
+        if(result === "player"){
+            overallPlayerScore += 1;
+        } else if(result === "computer"){
+            overallComputerScore += 1;
+        } else {
+            overallTies += 1;
+        }
+        player.textContent=overallPlayerScore;
+        computer.textContent=overallComputerScore;
+        gameTies.textContent=overallTies;
+    });
+    paper.addEventListener('click', () => {
+        const result = gameRps("paper", getComputerChoice());
+        if(result === "player"){
+            overallPlayerScore += 1;
+        } else if(result === "computer"){
+            overallComputerScore += 1;
+        } else {
+            overallTies += 1;
+        }
+        player.textContent=overallPlayerScore;
+        computer.textContent=overallComputerScore;
+        gameTies.textContent=overallTies;
+    });
+    scissors.addEventListener('click', () => {
+        const result = gameRps("scissors", getComputerChoice());
+        if(result === "player"){
+            overallPlayerScore += 1;
+        } else if(result === "computer"){
+            overallComputerScore += 1;
+        } else {
+            overallTies += 1;
+        }
+        player.textContent=overallPlayerScore;
+        computer.textContent=overallComputerScore;
+        gameTies.textContent=overallTies;
+    });
+});
