@@ -6,6 +6,14 @@ const output = document.getElementById('output');
 const shake = document.getElementById('shake');
 var size = 16;
 
+function randomRGB() {
+    const r = Math.floor(Math.random()*256);
+    const g = Math.floor(Math.random()*256);
+    const b = Math.floor(Math.random()*256);
+    return `rgb(${r}, ${g}, ${b})`
+
+}
+
 // Create the grid
 function createGrid(size) {
     container.innerHTML="";
@@ -26,7 +34,13 @@ function createGrid(size) {
     const cells = document.querySelectorAll(".cell");
     cells.forEach((cell) => {
         cell.addEventListener("mouseover", () => {
-            cell.style.backgroundColor = "black";
+            if(toggleSwitch.checked){
+                const randColor = randomRGB();
+                cell.style.backgroundColor = randColor;
+            } else {
+                cell.style.backgroundColor = "black";
+            }
+            
         })
     })
 
