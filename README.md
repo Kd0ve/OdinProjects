@@ -1,5 +1,6 @@
 # OdinProjects
 All the projects from odin \
-Odin Recipes - https://kd0ve.github.io/OdinProjects/odin-recipes-main \
-Landing Page - https://kd0ve.github.io/OdinProjects/landing-page-main \
-Rock, Paper, Scissors - https://kd0ve.github.io/OdinProjects/rock-paper-scissors \
+Odin Recipes - https://kdove.moe/OdinProjects/odin-recipes-main \
+Landing Page - https://kdove.moe/OdinProjects/landing-page-main \
+Rock, Paper, Scissors - https://kdove.moe/OdinProjects/rock-paper-scissors \
+Etch-A-Sketch - https://kdove.moe/OdinProjects/etch-a-sketch
