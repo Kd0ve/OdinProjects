@@ -8,6 +8,7 @@ body {
     flex-direction: column;
     display: flex;
 	align-items: center;
+    background-color:bisque;
 }
 
 header {
