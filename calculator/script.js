@@ -59,31 +59,49 @@ one.addEventListener('click', () => {
     }
 })
 two.addEventListener('click', () => {
-    displayNum(2);
+    if(answer.innerText.length <= 12) {
+        displayNum(2);
+    }
 })
 three.addEventListener('click', () => {
-    displayNum(3);
+    if(answer.innerText.length <= 12) {
+        displayNum(3);
+    }
 })
 four.addEventListener('click', () => {
-    displayNum(4);
+    if(answer.innerText.length <= 12) {
+        displayNum(4);
+    }
 })
 five.addEventListener('click', () => {
-    displayNum(5);
+    if(answer.innerText.length <= 12) {
+        displayNum(5);
+    }
 })
 six.addEventListener('click', () => {
-    displayNum(6);
+    if(answer.innerText.length <= 12) {
+        displayNum(6);
+    }
 })
 seven.addEventListener('click', () => {
-    displayNum(7);
+    if(answer.innerText.length <= 12) {
+        displayNum(7);
+    }
 })
 eight.addEventListener('click', () => {
-    displayNum(8);
+    if(answer.innerText.length <= 12) {
+        displayNum(8);
+    }
 })
 nine.addEventListener('click', () => {
-    displayNum(9);
+    if(answer.innerText.length <= 12) {
+        displayNum(9);
+    }
 })
 zero.addEventListener('click', () => {
-    displayNum(0);
+    if(answer.innerText.length <= 12) {
+        displayNum(0);
+    }
 })
 
 //functions
