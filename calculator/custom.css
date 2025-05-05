@@ -1,0 +1,83 @@
+:root {
+    --calc-background-color: #1f1b58;
+    --font-color: #dcdcdc;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    display: flex;
+	align-items: center;
+}
+
+header {
+    align-items: center;
+}
+
+main {
+    margin-top: 5%;
+}
+
+button {
+    color: var(--font-color);
+    background: rgba(42,50,113, .28);
+    border-radius: 25%;
+    cursor: pointer;
+    float: left;
+    font: inherit;
+    margin: 0.50em;
+    width: 2em;
+    height: 2em;  
+}
+
+button:hover {
+    top: 5px;
+    box-shadow: -2px 2px 0px #1a1919;
+    cursor: pointer;
+}
+
+.row button {
+    width: 50px;
+    height: 40px;
+}
+
+.calculator {
+    color: var(--font-color);
+    background-color: var(--calc-background-color);
+    border: 5px black;
+    box-shadow: -5px 8px 8px 2px #353333;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    padding-left:10px;
+    padding-right: 10px;
+}
+
+.display {
+    background-color: #3f5940;
+    border: 5px black;
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+#history {
+    font-size: 20px;
+    margin-left: auto;
+    padding-right: 30px;
+}
+
+#answer {
+    font-size: 40px;
+    margin-left: auto;
+    padding-right: 30px;
+}
