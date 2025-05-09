@@ -92,6 +92,7 @@ button {
     border: 2px solid #E5E7EB;
     height: 20px;
     width: 200px;
+    outline:none;
 }
 
 input:invalid {
@@ -100,6 +101,7 @@ input:invalid {
 
 input:focus {
     border: 2px solid #0084ff;
+    box-shadow: 1px 1px 4px #555
 }
 
 #odin-logo {
