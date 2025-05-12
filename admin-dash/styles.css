@@ -1,0 +1,272 @@
+/* MAIN */
+@font-face {
+    font-family: "Roboto";
+    src: url(/Roboto/static/Roboto-Medium.ttf) format(truetype);
+}
+
+:root {
+    --font-family: "Roboto";
+    --font-color: rgb(167, 167, 167);
+    --background-color: white;
+    --accent-color: rgb(237, 246, 125);
+    --sidebar-color: rgb(86, 69, 146);
+    --shadow-box: rgb(175, 175, 175);
+    --pro-background: rgb(243, 243, 243);
+    --font-size: 12px;
+    --h2-font: 20px;
+    --h1-font: 25px;
+
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+    background: var(--background-color);
+    font-family: var(--font-family), sans-serif;
+}
+
+p {
+    color: var(--font-color);
+}
+
+.sidebar svg {
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
+}
+
+/* CLASSES */
+.container {
+    overflow: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* main styles */
+.main {
+    grid-column: 3 / 11;
+    grid-row: 1/11;
+    display: grid;
+}
+
+/* sidebar styles */
+.sidebar {
+    color: white;
+    background-color: var(--sidebar-color);
+    grid-column: 1 / 3;
+    grid-row: 1/11;
+}
+
+.sidebar .title,
+.options div,
+.nav div {
+    display: flex;
+}
+
+/* nav styles */
+.nav ul{
+    list-style: none;
+    padding-left: 30px;
+}
+
+.title {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.title svg {
+    padding-top: 12px;
+    padding-right: 5px;
+}
+
+.nav svg {
+    height: 30px;
+    width: 30px;
+}
+
+.nav ul li {
+    padding-top: 8px;
+    padding-left: 5px;
+}
+
+.nav div {
+    padding: 5px;
+}
+
+/* options styles */
+.options ul {
+    list-style: none;
+    padding-left: 30px;
+}
+
+.options svg {
+    height: 30px;
+    width: 30px;
+}
+
+.options ul li {
+    padding-top: 8px;
+    padding-left: 5px;
+}
+
+.options div {
+    padding: 5px;
+}
+
+/* header styles */
+.header {
+    display: grid;
+    grid-column: 1 / 11;
+    grid-row: 1 / 2;
+    padding: 10px;
+    margin: 20px;
+}
+
+.header svg {
+    height: 20px;
+    width: 20px;
+}
+
+.header h1, p {
+    padding: 0;
+    margin: 0;
+}
+
+/* head title styles */
+.head-title {
+    margin-top: 30px;
+}
+
+/* search bar styles */
+.search {
+    grid-row: 1 / 1;
+    grid-column: 1 / 6;
+}
+
+.search input {
+    width: 60%;
+    height: 20px;
+    border-radius: 30px;
+    padding-top: 8px;
+    border: none;
+    background-color: var(--pro-background);
+}
+
+/* heading styles */
+.heading {
+    grid-column: 1 / 5;
+    grid-row: 2 / 4;
+}
+
+/* buttons styles */
+.head-buts
+{
+    grid-column:  5/6;
+    grid-row: 3 / 3;
+    margin-bottom: 20px;
+}
+
+.head-buts button {
+    background-color: var(--sidebar-color);
+    font-family: var(--font-family);
+    font-size: 15px;
+    color: white;
+    padding: 12px 30px 12px 30px;
+    border: none;
+    border-radius: 30px;
+    margin-right: 40px;
+}
+
+/* projects styles */
+.projects {
+    display: grid;
+    grid-column: 1 / 11;
+    grid-row: 2 / 11;
+    background-color: var(--pro-background);
+}
+
+.projects h1 {
+    margin-left: 10px;
+    font-size: var(--h1-font)
+}
+
+.projects h2 {
+    font-size: var(--h2-font);
+}
+
+.your-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    grid-row: 2 / 11;
+    grid-column: 1 / 10;
+}
+
+.your-projects #card {
+    background-color: white;
+    border-left: 5px solid var(--accent-color);
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 2px 4px 4px var(--shadow-box);
+}
+
+.your-projects #card svg{
+    height: 25px;
+    width: 25px;
+}
+
+/* accouncements styles */
+.annoucements {
+    grid-column: 10 /11;
+    grid-row: 1 / 5;
+}
+
+.annoucements p {
+    font-size: 12px;
+}
+
+.annoucements h2 {
+    font-size: 15px;
+}
+
+.ann-cards {
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 2px 4px 4px rgb(175, 175, 175);
+}
+
+.annoucements #card {
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+/* trending styles */
+.trending {
+    grid-column: 7 / 11;
+    grid-row: 5 / 11;
+}
+
+.trending ul {
+    list-style: none;
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 2px 4px 4px var(--shadow-box);
+}
+
+.trending ul li {
+    padding: 10px;
+}
+
+#sub {
+    color: var(--font-color)
+}
