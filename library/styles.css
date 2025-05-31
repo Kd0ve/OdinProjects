@@ -1,0 +1,219 @@
+:root {
+    /* Gruvbox Light palette */
+    --color-header-bg: #fbf1c7;
+    --color-header-border: #bdae93;
+    --color-bg: #f9f5d7;
+    --color-card-bg: #f2e5bc;
+    --color-header: #b57614;
+    --color-card-title: #3c3836;
+    --color-card-text: #665c54;
+    --color-btn-remove: #cc241d;
+    --color-btn-remove-hover: #9d0006;
+    --color-btn-add: #98971a;
+    --color-btn-add-hover: #b8bb26;
+    --color-dialog-bg: #fbf1c7;
+    --color-form-border: #bdae93;
+    --color-btn-confirm: #b8bb26;
+    --color-btn-confirm-hover: #98971a;
+    --color-btn-close: #7c6f64;
+    --color-btn-close-hover: #665c54;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-image: url("img/inaki-del-olmo-NIJuEQw0RKg-unsplash.jpg");
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    background: var(--color-header-bg);
+    border-bottom: 3px double var(--color-header-border);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    position: static;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    padding: 2rem 0 0.5rem 0;
+    font-size: 2.7rem;
+    color: var(--color-header);
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: none;
+    border: none;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+#container {
+    background: var(--color-bg);
+    border-left: 3px double var(--color-header-border);
+    border-right: 3px double var(--color-header-border);    
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    display: block;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+#new-book-btn {
+    display: block;
+    margin: 1.5rem auto 0 auto;
+    padding: 0.6rem 2rem;
+    background: var(--color-btn-add);
+    color: #f9f5d7;
+    border: 1px solid var(--color-header-border);
+    border-radius: 0;
+    font-size: 1.05rem;
+    cursor: pointer;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-weight: bold;
+    transition: background 0.2s, border 0.2s;
+    box-shadow: none;
+    letter-spacing: 1px;
+}
+
+#new-book-btn:hover {
+    background: var(--color-btn-add-hover);
+    border: 1px solid var(--color-btn-add-hover);
+    color: #3c3836;
+}
+
+#library {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.card {
+    background: var(--color-card-bg);
+    border-radius: 0;
+    border: 1.5px solid var(--color-header-border);
+    padding: 1.2rem 1.5rem;
+    min-width: 220px;
+    max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: box-shadow 0.2s, border 0.2s;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.card h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.15rem;
+    color: var(--color-card-title);
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-weight: bold;
+    border-bottom: 1px dotted var(--color-header-border);
+    padding-bottom: 0.2rem;
+    width: 100%;
+}
+
+.card p {
+    margin: 0.3rem 0;
+    color: var(--color-card-text);
+    font-size: 1rem;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.card button {
+    margin-top: 1rem;
+    padding: 0.4rem 1rem;
+    background: var(--color-btn-remove);
+    color: #fbf1c7;
+    border: 1px solid var(--color-header-border);
+    border-radius: 0;
+    cursor: pointer;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-weight: bold;
+    transition: background 0.2s, border 0.2s;
+    letter-spacing: 1px;
+}
+
+.card button:hover {
+    background: var(--color-btn-remove-hover);
+    border: 1px solid var(--color-btn-remove-hover);
+    color: #f9f5d7;
+}
+
+/* Dialog styles */
+dialog {
+    border: 2px solid var(--color-header-border);
+    border-radius: 0;
+    padding: 2rem;
+    background: var(--color-dialog-bg);
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+#form {
+    color: var(--color-card-text);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#form input, #form select {
+    padding: 0.5rem;
+    border: 1px solid var(--color-form-border);
+    border-radius: 0;
+    font-size: 1rem;
+    background: #f9f5d7;
+    color: #3c3836;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+#form input:focus, #form select:focus {
+    outline: 2px solid var(--color-header);
+}
+
+#form-alert {
+    color: var(--color-btn-remove);
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: none;
+}
+
+#confirm, #close {
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    background: var(--color-btn-confirm);
+    border: 1px solid var(--color-header-border);
+    border-radius: 0;
+    cursor: pointer;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-weight: bold;
+    transition: background 0.2s, border 0.2s;
+    letter-spacing: 1px;
+}
+
+#close {
+    background: var(--color-btn-close);
+    color: #fbf1c7;
+    margin-left: 1rem;
+}
+
+#confirm:hover {
+    background: var(--color-btn-confirm-hover);
+    border: 1px solid var(--color-btn-confirm-hover);
+    color: #3c3836;
+}
+
+#close:hover {
+    background: var(--color-btn-close-hover);
+    border: 1px solid var(--color-btn-close-hover);
+    color: #fbf1c7;
+}
